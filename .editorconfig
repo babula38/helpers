@@ -1,0 +1,103 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = crlf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+
+#custom
+[*.{cs}]
+
+#Prefer "var"
+csharp_style_var_when_type_is_apparent = true
+#Don't prefer "var"
+csharp_style_var_for_built_in_types = false:suggestion
+csharp_style_var_elsewhere = false:suggestion
+
+#Prefer braces when multiline
+csharp_prefer_braces = when_multiline
+csharp_style_expression_bodied_methods  = when_on_single_line
+
+# IDE0160: Convert to block-scoped namespace
+# Prefer file scoped namespace
+csharp_style_namespace_declarations = block_scoped:none
+
+#Roslynator
+#dotnet_diagnostic.<RULE_ID>.severity = <default|none|silent|info|warning|error>
+#dotnet_diagnostic.RCS1192.severity = error
+
+#Prefer no inline method call
+dotnet_diagnostic.RCS1124.severity = none
+
+#Prefer no explicit .ConfigureAwait(bool) for webapi
+dotnet_diagnostic.VSTHRD111.severity = none
+
+#Roslynator Code formating
+dotnet_diagnostic.RCS0001.severity = info
+dotnet_diagnostic.RCS0002.severity = info
+dotnet_diagnostic.RCS0003.severity = info
+dotnet_diagnostic.RCS0004.severity = info
+dotnet_diagnostic.RCS0005.severity = info
+dotnet_diagnostic.RCS0006.severity = info
+dotnet_diagnostic.RCS0007.severity = info
+dotnet_diagnostic.RCS0008.severity = info
+dotnet_diagnostic.RCS0009.severity = info
+dotnet_diagnostic.RCS0010.severity = info
+dotnet_diagnostic.RCS0011.severity = info
+dotnet_diagnostic.RCS0012.severity = info
+dotnet_diagnostic.RCS0013.severity = info
+dotnet_diagnostic.RCS0014.severity = info
+dotnet_diagnostic.RCS0015.severity = info
+dotnet_diagnostic.RCS0016.severity = info
+dotnet_diagnostic.RCS0017.severity = info
+dotnet_diagnostic.RCS0018.severity = info
+dotnet_diagnostic.RCS0019.severity = info
+dotnet_diagnostic.RCS0020.severity = info
+dotnet_diagnostic.RCS0021.severity = info
+dotnet_diagnostic.RCS0022.severity = info
+dotnet_diagnostic.RCS0023.severity = info
+dotnet_diagnostic.RCS0024.severity = info
+dotnet_diagnostic.RCS0025.severity = info
+dotnet_diagnostic.RCS0026.severity = info
+dotnet_diagnostic.RCS0027.severity = info
+dotnet_diagnostic.RCS0028.severity = info
+dotnet_diagnostic.RCS0029.severity = info
+dotnet_diagnostic.RCS0030.severity = info
+dotnet_diagnostic.RCS0031.severity = info
+dotnet_diagnostic.RCS0032.severity = info
+dotnet_diagnostic.RCS0033.severity = info
+dotnet_diagnostic.RCS0034.severity = info
+dotnet_diagnostic.RCS0035.severity = info
+dotnet_diagnostic.RCS0036.severity = info
+dotnet_diagnostic.RCS0037.severity = info
+dotnet_diagnostic.RCS0038.severity = info
+dotnet_diagnostic.RCS0039.severity = info
+dotnet_diagnostic.RCS0040.severity = info
+dotnet_diagnostic.RCS0041.severity = info
+dotnet_diagnostic.RCS0042.severity = info
+dotnet_diagnostic.RCS0043.severity = info
+dotnet_diagnostic.RCS0044.severity = info
+dotnet_diagnostic.RCS0045.severity = info
+dotnet_diagnostic.RCS0046.severity = info
+dotnet_diagnostic.RCS0047.severity = info
+dotnet_diagnostic.RCS0048.severity = info
+dotnet_diagnostic.RCS0049.severity = info
+dotnet_diagnostic.RCS0050.severity = info
+dotnet_diagnostic.RCS0051.severity = info
+dotnet_diagnostic.RCS0052.severity = info
+dotnet_diagnostic.RCS0053.severity = info
+dotnet_diagnostic.RCS0054.severity = info
+dotnet_diagnostic.RCS0055.severity = info
+dotnet_diagnostic.RCS0056.severity = info
+
+
+#resharp
+
+#Meziantou.Analyzer
+dotnet_diagnostic.MA0004.severity = none
